@@ -1,0 +1,247 @@
+/* General styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+/* Body and Background */
+body {
+    background-image: url(images/tropical_island.jpg); /* Replace with your actual image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.image {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* Transparent container styling */
+.transparent-container {
+    background-color: rgba(255, 255, 255, 0.7); /* White with transparency */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+    color: #333; /* Dark text for better readability */
+}
+
+/* Header */
+header {
+    background-color: #0c8dc0;
+    color: white;
+    padding: 20px;
+}
+
+.intro {
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    background: #0c8dc0;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar__links {
+    color: white;
+    text-decoration: none;
+    padding: 0 10rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navbar__search {
+    display: flex;
+    align-items: center;
+}
+
+.search__input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    width: 200px;
+}
+
+.search__button {
+    padding: 7.5px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.search__button:hover {
+    background-color: #f77062;
+    transition: 0.3s ease-in-out;
+}
+
+/* Main Section */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    margin-top: 20px;
+}
+
+/* Left Container: Travel Info */
+.content__left {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.travel-info {
+    display: flex;
+    align-items: center;
+}
+
+.info__image {
+    width: 50%;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.info__text {
+    flex: 1;
+}
+
+.info__text h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.info__text ul {
+    list-style-type: none;
+}
+
+.info__text li {
+    margin-bottom: 10px;
+}
+
+/* Right Container: News Section */
+.content__right {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.news-section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.news-section ul {
+    list-style-type: none;
+}
+
+.news-section li {
+    margin-bottom: 10px;
+}
+
+/* Add transparency to containers */
+.content__left .travel-info, .content__right .news-section, .bottom-container {
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+/* Bottom Three Containers */
+.bottom-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.bottom-container {
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bottom-container img {
+    width: 100%;
+    border-radius: 10px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.caption {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Activities */
+/* Style for smaller container */
+.travel-info {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px; /* Smaller width for a compact look */
+    margin: 0 auto;
+}
+
+/* Adjust the heading size */
+.travel-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #000304;
+}
+
+/* Style for bullet points in the list */
+.activities-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #333;
+}
+
+.activities-list li, .lodging_list li, .food_list li {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+ul {
+    margin: 0; /* Reset margin for ul only if needed */
+    padding: 0; /* Reset padding for ul only if needed */
+}
